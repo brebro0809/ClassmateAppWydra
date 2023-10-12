@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181A02AA2AD83B82007C1B7E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A02A92AD83B82007C1B7E /* ViewController2.swift */; };
 		1837A5A02AD6E89E009E34A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837A59F2AD6E89E009E34A6 /* AppDelegate.swift */; };
 		1837A5A22AD6E89E009E34A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837A5A12AD6E89E009E34A6 /* SceneDelegate.swift */; };
 		1837A5A42AD6E89E009E34A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837A5A32AD6E89E009E34A6 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181A02A92AD83B82007C1B7E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		1837A59C2AD6E89E009E34A6 /* ClassmateAppWydra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassmateAppWydra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1837A59F2AD6E89E009E34A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1837A5A12AD6E89E009E34A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				1837A5A12AD6E89E009E34A6 /* SceneDelegate.swift */,
 				1837A5A32AD6E89E009E34A6 /* ViewController.swift */,
 				1837A5A52AD6E89E009E34A6 /* Main.storyboard */,
+				181A02A92AD83B82007C1B7E /* ViewController2.swift */,
 				1837A5D22AD6E8C9009E34A6 /* Student.swift */,
 				1837A5AB2AD6E89F009E34A6 /* Assets.xcassets */,
 				1837A5AD2AD6E89F009E34A6 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				1837A5A22AD6E89E009E34A6 /* SceneDelegate.swift in Sources */,
 				1837A5D32AD6E8C9009E34A6 /* Student.swift in Sources */,
 				1837A5AA2AD6E89E009E34A6 /* ClassmateAppWydra.xcdatamodeld in Sources */,
+				181A02AA2AD83B82007C1B7E /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
