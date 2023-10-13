@@ -11,6 +11,14 @@ enum Rating {
     case fire
     case mid
     case trash
+    
+    var order: Int {
+        switch self {
+        case .fire: return 0
+        case .mid: return 1
+        case .trash: return 2
+        }
+    }
 }
 
 class Student {

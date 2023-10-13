@@ -7,6 +7,7 @@
 
 protocol StudentDelegate{
     func changeList(_ list: [Student])
+    func getList() -> [Student]
 }
 
 import UIKit
@@ -44,6 +45,15 @@ class ViewController: UIViewController, StudentDelegate {
     
     func changeList(_ list: [Student]) {
         students = list
+    }
+    
+    func getList() -> [Student] {
+        return students
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! ViewController2
+        nvc.delegate = self
     }
 
 }
