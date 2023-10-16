@@ -19,7 +19,9 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         students = delegate.getList()
 
         updateLabel()
@@ -49,6 +51,11 @@ class ViewController2: UIViewController {
     
     func updateLabel(){
         valueLabel.text = "\(students[index].firstName) \(students[index].lastName), \(students[index].rating)"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! ViewController3
+        nvc.delegate2 = delegate
     }
 
 }

@@ -32,6 +32,14 @@
                                     <segue destination="SSG-rC-weK" kind="show" id="CLG-kO-xeT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-mj-CwA">
+                                <rect key="frame" x="147" y="402" width="98" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Quiz">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -108,16 +116,16 @@
             </objects>
             <point key="canvasLocation" x="1759.5419847328244" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller3-->
         <scene sceneID="9rF-ZD-YMP">
             <objects>
-                <viewController id="Qza-Je-QFm" sceneMemberID="viewController">
+                <viewController id="Qza-Je-QFm" customClass="ViewController3" customModule="ClassmateAppWydra" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oka-NI-zPq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBk-e7-3GC">
-                                <rect key="frame" x="82" y="258" width="229" height="34"/>
+                                <rect key="frame" x="82" y="220" width="229" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -127,18 +135,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Mid"/>
+                                <connections>
+                                    <action selector="midPress:" destination="Qza-Je-QFm" eventType="touchUpInside" id="NV2-ew-1Uu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKF-es-ehX">
                                 <rect key="frame" x="16" y="380" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Fire"/>
+                                <connections>
+                                    <action selector="firePress:" destination="Qza-Je-QFm" eventType="touchUpInside" id="YPD-zf-fhT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVP-kI-J1y">
                                 <rect key="frame" x="277" y="380" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Trash"/>
+                                <connections>
+                                    <action selector="trashPress:" destination="Qza-Je-QFm" eventType="touchUpInside" id="1pc-8J-oRI"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg7-EV-Coe">
                                 <rect key="frame" x="95" y="300" width="202" height="50"/>
@@ -147,11 +164,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P95-sO-vLO">
+                                <rect key="frame" x="82" y="262" width="229" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A4F-wI-c7E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="L2N-SZ-u5a"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="kg7-EV-Coe" id="CMe-Na-8Vh"/>
+                        <outlet property="firstInput" destination="OBk-e7-3GC" id="pVi-Qf-X9G"/>
+                        <outlet property="lastInput" destination="P95-sO-vLO" id="Amy-ds-Pec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tW8-kS-Sjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
