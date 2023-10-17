@@ -52,8 +52,13 @@ class ViewController: UIViewController, StudentDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nvc = segue.destination as! ViewController2
-        nvc.delegate = self
+        if (segue.identifier == "toView") {
+            let nvc = segue.destination as! ViewController2
+            nvc.delegate = self
+        } else if (segue.identifier == "toQuiz") {
+            let nvc = segue.destination as! ViewController4
+            nvc.delegate = self
+        }
     }
 
 }
