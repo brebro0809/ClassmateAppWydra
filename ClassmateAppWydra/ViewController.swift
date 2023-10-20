@@ -58,6 +58,9 @@ class ViewController: UIViewController, StudentDelegate {
         } else if (segue.identifier == "toQuiz") {
             let nvc = segue.destination as! ViewController4
             nvc.delegate = self
+        } else if (segue.identifier == "toTable") {
+            let nvc = segue.destination as! ViewController5
+            nvc.delegate = self
         }
     }
 

@@ -20,6 +20,8 @@
 		1837A5C62AD6E89F009E34A6 /* ClassmateAppWydraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837A5C52AD6E89F009E34A6 /* ClassmateAppWydraUITestsLaunchTests.swift */; };
 		1837A5D32AD6E8C9009E34A6 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837A5D22AD6E8C9009E34A6 /* Student.swift */; };
 		183A67702ADECC8A0091BED2 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A676F2ADECC8A0091BED2 /* ViewController4.swift */; };
+		185D1C452AE2C29E003145B1 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D1C442AE2C29E003145B1 /* ViewController5.swift */; };
+		185D1C472AE2C3BA003145B1 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D1C462AE2C3BA003145B1 /* StudentCell.swift */; };
 		18B1DA5D2ADD836100F21337 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B1DA5C2ADD836100F21337 /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		1837A5C52AD6E89F009E34A6 /* ClassmateAppWydraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassmateAppWydraUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1837A5D22AD6E8C9009E34A6 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		183A676F2ADECC8A0091BED2 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		185D1C442AE2C29E003145B1 /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		185D1C462AE2C3BA003145B1 /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		18B1DA5C2ADD836100F21337 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,11 +113,13 @@
 		1837A59E2AD6E89E009E34A6 /* ClassmateAppWydra */ = {
 			isa = PBXGroup;
 			children = (
+				185D1C462AE2C3BA003145B1 /* StudentCell.swift */,
 				1837A59F2AD6E89E009E34A6 /* AppDelegate.swift */,
 				1837A5A12AD6E89E009E34A6 /* SceneDelegate.swift */,
 				1837A5A32AD6E89E009E34A6 /* ViewController.swift */,
 				1837A5A52AD6E89E009E34A6 /* Main.storyboard */,
 				183A676F2ADECC8A0091BED2 /* ViewController4.swift */,
+				185D1C442AE2C29E003145B1 /* ViewController5.swift */,
 				18B1DA5C2ADD836100F21337 /* ViewController3.swift */,
 				181A02A92AD83B82007C1B7E /* ViewController2.swift */,
 				1837A5D22AD6E8C9009E34A6 /* Student.swift */,
@@ -277,6 +283,8 @@
 				1837A5A02AD6E89E009E34A6 /* AppDelegate.swift in Sources */,
 				1837A5A22AD6E89E009E34A6 /* SceneDelegate.swift in Sources */,
 				183A67702ADECC8A0091BED2 /* ViewController4.swift in Sources */,
+				185D1C452AE2C29E003145B1 /* ViewController5.swift in Sources */,
+				185D1C472AE2C3BA003145B1 /* StudentCell.swift in Sources */,
 				1837A5D32AD6E8C9009E34A6 /* Student.swift in Sources */,
 				1837A5AA2AD6E89E009E34A6 /* ClassmateAppWydra.xcdatamodeld in Sources */,
 				18B1DA5D2ADD836100F21337 /* ViewController3.swift in Sources */,
